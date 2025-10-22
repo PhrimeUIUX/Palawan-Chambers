@@ -1,0 +1,47 @@
+#overlay, #drawer {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  transition: 0.3s ease;
+  z-index: 999; /* keeps above other elements */
+}
+
+/* --- Overlay --- */
+#overlay {
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- Drawer panel --- */
+#drawer {
+  right: -280px; /* hidden offscreen */
+  width: 280px;
+  background: #fff;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.2);
+  padding: 1rem;
+}
+#drawer.active {
+  right: 0;
+}
+
+/* --- Close button --- */
+#close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+}
+
+/* --- Optional open button styling --- */
+#open {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
