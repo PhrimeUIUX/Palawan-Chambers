@@ -20,7 +20,8 @@ body {
 
 #hero-logo {
     align-self: center;
-    width: clamp(150px, 8vw, 200);
+    height: auto;
+    width: clamp(150px, 8vw, 300px);
 }
 
 #logo {
