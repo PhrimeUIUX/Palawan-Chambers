@@ -1,14 +1,56 @@
-
 #open-container {
-  height: fill;
+  display: flex;
+  height: 80px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   background-color: #24344b;
 }
 
 #open {
-    height: 35px;
-} 
+  height: 35px;
+  cursor: pointer;
+}
 
-#overlay, #drawer {
+#drawer-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+  margin: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* --- Close button --- */
+#close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.area-city {
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
+  background-color: #ffffff;
+  transition: 0.3s ease-out;
+  user-select: none;
+}
+
+.area-city:hover {
+  background-color: #cfd0ed;
+}
+
+.area-city:active {
+  color: #ffffff;
+  background-color: #2A2C79;
+}
+
+#overlay,
+#drawer {
   position: fixed;
   top: 0;
   height: 100%;
@@ -20,10 +62,11 @@
 #overlay {
   left: 0;
   width: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   pointer-events: none;
 }
+
 #overlay.active {
   opacity: 1;
   pointer-events: auto;
@@ -34,19 +77,12 @@
   left: 0;
   width: 280px;
   background: #fff;
-  box-shadow: 4px 0 12px rgba(0,0,0,0.2);
-  padding: 1rem;
-  transform: translateX(-100%); /* completely offscreen */
-}
-#drawer.active {
-  transform: translateX(0); /* slide in */
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%);
+  /* completely offscreen */
 }
 
-/* --- Close button --- */
-#close {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  float: right;
+#drawer.active {
+  transform: translateX(0);
+  /* slide in */
 }
