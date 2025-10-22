@@ -10,11 +10,25 @@ body {
     font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
 }
 
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #1D293A;
+}
+
+#hero-logo {
+    align-self: center;
+    width: clamp(150px, 8vw, 200);
+}
+
 #logo {
     height: auto;
     width: clamp(100px, 50vw, 200px);
-    padding-left: clamp(20px, 2vw, 40px);
-    padding-top: clamp(20px, 2vw, 40px);
+    padding-left: clamp(10px, 2vw, 15px);
+    padding-top: clamp(10px, 2vw, 15px);
+    padding-bottom: clamp(10px, 2vw, 15px);
     cursor: pointer;
 }
 

@@ -1,9 +1,19 @@
+
+#open-container {
+  height: fill;
+  background-color: #24344b;
+}
+
+#open {
+    height: 35px;
+} 
+
 #overlay, #drawer {
   position: fixed;
   top: 0;
   height: 100%;
   transition: 0.3s ease;
-  z-index: 999; /* keeps above other elements */
+  z-index: 999;
 }
 
 /* --- Overlay --- */
@@ -19,16 +29,17 @@
   pointer-events: auto;
 }
 
-/* --- Drawer panel --- */
+/* --- Drawer (from left, fully hidden with translate) --- */
 #drawer {
-  right: -280px; /* hidden offscreen */
+  left: 0;
   width: 280px;
   background: #fff;
-  box-shadow: -4px 0 12px rgba(0,0,0,0.2);
+  box-shadow: 4px 0 12px rgba(0,0,0,0.2);
   padding: 1rem;
+  transform: translateX(-100%); /* completely offscreen */
 }
 #drawer.active {
-  right: 0;
+  transform: translateX(0); /* slide in */
 }
 
 /* --- Close button --- */
@@ -38,10 +49,4 @@
   font-size: 1.5rem;
   cursor: pointer;
   float: right;
-}
-
-/* --- Optional open button styling --- */
-#open {
-  margin: 1rem;
-  padding: 0.5rem 1rem;
 }
