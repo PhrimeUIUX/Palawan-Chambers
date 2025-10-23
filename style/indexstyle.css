@@ -106,6 +106,27 @@ body {
     transition: 0.3s ease;
 }
 
+#contactbuttonmargin-chambers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+}
+
+#contactbutton-chambers {
+    height: auto;
+    width: fit-content;
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: clamp(14px, 3vw, 24px);
+    color: white;
+    background-color: #2A2C79;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: 0.3s ease;
+}
+
 #contactbutton:hover {
     font-size: clamp(20px, 3vw, 26px);
 }

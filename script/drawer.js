@@ -3,9 +3,10 @@ const overlay = document.getElementById('overlay');
 const openBtn = document.getElementById('open');
 const openBtn2 = document.getElementById('open-container');
 const closeBtn = document.getElementById('close');
+const contactBtn = document.getElementById('contactbuttonmargin'); // 👈 added
 const areaCities = document.querySelectorAll('.area-city');
 const page = document.getElementById('page');
-const missionVision = document.getElementById('mission-vision-container'); // 👈 now uses ID
+const missionVision = document.getElementById('mission-vision-container');
 
 let activeCity = null;
 
@@ -13,6 +14,11 @@ openBtn.onclick = openDrawer;
 openBtn2.onclick = openDrawer;
 closeBtn.onclick = closeDrawer;
 overlay.onclick = closeDrawer;
+
+// 👇 open drawer when contact button is clicked
+if (contactBtn) {
+  contactBtn.addEventListener('click', openDrawer);
+}
 
 areaCities.forEach(city => {
   city.addEventListener('click', () => {
