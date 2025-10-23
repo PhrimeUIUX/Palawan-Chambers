@@ -166,3 +166,14 @@ body {
     background-image: url('https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/mission.jpg');
     background-position: center;
 }
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    font-size: clamp(12px, 3vw, 16px);
+    background-color: #1D293A;
+    color: white;
+}
