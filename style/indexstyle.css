@@ -90,6 +90,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 125px;
+    user-select: none;
 }
 
 #contactbutton {
@@ -103,6 +104,7 @@ body {
     background-color: #2A2C79;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
     transition: 0.3s ease;
 }
 
@@ -111,6 +113,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 125px;
+    user-select: none;
 }
 
 #contactbutton-chambers {
@@ -124,6 +127,7 @@ body {
     background-color: #2A2C79;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
     transition: 0.3s ease;
 }
 
