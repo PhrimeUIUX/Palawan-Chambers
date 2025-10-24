@@ -7,7 +7,6 @@ const contactBtn = document.getElementById('contactbuttonmargin');
 const areaCities = document.querySelectorAll('.area-city');
 const page = document.getElementById('page');
 const missionVision = document.getElementById('mission-vision-container');
-const body = document.body; // 👈 for changing background
 
 let activeCity = null;
 
@@ -16,7 +15,6 @@ openBtn2.onclick = openDrawer;
 closeBtn.onclick = closeDrawer;
 overlay.onclick = closeDrawer;
 
-// 👇 open drawer when contact button is clicked
 if (contactBtn) {
   contactBtn.addEventListener('click', openDrawer);
 }
@@ -40,15 +38,13 @@ areaCities.forEach(city => {
       // 🧩 load snippet
       loadSnippet(page, snippetPath);
 
-      // 👇 hide mission-vision when a city is clicked
+      // 👇 hide mission-vision
       if (missionVision) {
         missionVision.style.display = 'none';
       }
 
-      // 🌆 update background image dynamically
-      const bgUrl = `https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/pcci(${cityId})bg.jpg?v=2`;
-      body.style.backgroundImage = `url('${bgUrl}')`;
-      console.log(`Background updated: ${bgUrl}`);
+      // 🏞️ update background image dynamically
+      page.style.backgroundImage = `url('https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/pcci${cityId}bg.jpg?v=2')`;
     }
 
     closeDrawer();
