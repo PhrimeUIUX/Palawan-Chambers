@@ -14,6 +14,56 @@
 </head>
 
 <body>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { getDatabase, ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+
+        // Firebase config
+        const firebaseConfig = {
+            apiKey: "AIzaSyBLGpIISGcq2Bo8BLLLFCLEtx_-kiZECnM",
+            authDomain: "pcci-mimaropa.firebaseapp.com",
+            databaseURL: "https://pcci-mimaropa-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "pcci-mimaropa",
+            storageBucket: "pcci-mimaropa.firebasestorage.app",
+            messagingSenderId: "633311769737",
+            appId: "1:633311769737:web:0df393653929266e5dc258",
+            measurementId: "G-D7SD8KDDEF"
+        };
+
+        // Init Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        const analytics = getAnalytics(app);
+
+        // Write data (auto ID)
+        // const usersRef = ref(db, 'users');
+        // const newUserRef = push(usersRef);
+        // set(newUserRef, {
+        //     name: "Ephraim",
+        //     email: "ephraim@example.com"
+        // }).then(() => {
+        //     alert("✅ Data written to Firebase!");
+        // }).catch((error) => {
+        //     alert("❌ Write failed: " + error.message);
+        // });
+
+        // Read data (Realtime)
+        // onValue(usersRef, (snapshot) => {
+        //     const users = snapshot.val();
+        //     if (users) {
+        //         let message = "📦 Realtime Data:\n\n";
+        //         for (const key in users) {
+        //             const user = users[key];
+        //             message += `• ${user.name} - ${user.email}\n`;
+        //         }
+        //         alert(message);
+        //     } else {
+        //         alert("No users found 😢");
+        //     }
+        // });
+    </script>
+
 
     <div id="header">
         <div id="open-container"><img id="open" src="icons/more_2_fill.png" alt=""></div>
@@ -28,7 +78,7 @@
         <div class="area-city" id="orientalmindoro">Oriental Mindoro Chamber</div>
         <div class="area-city" id="puertoprincesa">Puerto Princesa Chamber</div>
         <div class="area-city" id="marinduque">Marinduque Chamber</div>
-        <div class="area-city" id="narra">Narra  Chamber</div>
+        <div class="area-city" id="narra">Narra Chamber</div>
     </div>
 
     <div id="main_container">

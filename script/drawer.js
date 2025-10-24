@@ -3,10 +3,11 @@ const overlay = document.getElementById('overlay');
 const openBtn = document.getElementById('open');
 const openBtn2 = document.getElementById('open-container');
 const closeBtn = document.getElementById('close');
-const contactBtn = document.getElementById('contactbuttonmargin'); // 👈 added
+const contactBtn = document.getElementById('contactbuttonmargin');
 const areaCities = document.querySelectorAll('.area-city');
 const page = document.getElementById('page');
 const missionVision = document.getElementById('mission-vision-container');
+const body = document.body; // 👈 for changing background
 
 let activeCity = null;
 
@@ -43,6 +44,11 @@ areaCities.forEach(city => {
       if (missionVision) {
         missionVision.style.display = 'none';
       }
+
+      // 🌆 update background image dynamically
+      const bgUrl = `https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/pcci(${cityId})bg.jpg?v=2`;
+      body.style.backgroundImage = `url('${bgUrl}')`;
+      console.log(`Background updated: ${bgUrl}`);
     }
 
     closeDrawer();
