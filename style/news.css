@@ -1,0 +1,34 @@
+.news-main-container {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url('/assets/newsthumbnails/newsmarinduque.jpg?v=2');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.news-main-container:hover {
+    background-size: 110% auto;
+}
+
+#news-readmore {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 5px 5px;
+    color: white;
+    padding: 10px;
+    text-align: start;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #2A2C7900 0%, #2A2C79 100%);
+    cursor: pointer;
+}
+

@@ -112,7 +112,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 125px;
+    margin-top: 30px;
+    height: auto;
     user-select: none;
 }
 
@@ -129,6 +130,10 @@ body {
     -webkit-tap-highlight-color: transparent;
     user-select: none;
     transition: 0.3s ease;
+}
+
+#contactbutton-chambers:hover {
+    background-color: #393c95;
 }
 
 #contactbutton:hover {
