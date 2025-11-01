@@ -78,6 +78,46 @@
     background-size: 110% auto;
 }
 
+.news-main-container-puertoprincesa {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url('/assets/newsthumbnails/newspuertoprincesa.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.news-main-container-puertoprincesa:hover {
+    background-size: 110% auto;
+}
+
+.news-main-container-palawan {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url('/assets/newsthumbnails/newspalawan.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.news-main-container-palawan:hover {
+    background-size: 110% auto;
+}
+
 #newsmindoroflex {
   display: flex;
   flex-wrap: wrap;
