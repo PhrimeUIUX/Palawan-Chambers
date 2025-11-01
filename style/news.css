@@ -18,6 +18,77 @@
     background-size: 110% auto;
 }
 
+.news-main-container-narra {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url('/assets/newsthumbnails/newsnarra.jpg?v=2');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.news-main-container-narra:hover {
+    background-size: 110% auto;
+}
+
+.news-main-container-orientalmindoro {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url('/assets/newsthumbnails/newsorientalmindoro.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.news-main-container-orientalmindoro:hover {
+    background-size: 110% auto;
+}
+
+.news-main-container-orientalmindoro2 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url('/assets/newsthumbnails/newsorientalmindoro2.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.news-main-container-orientalmindoro2:hover {
+    background-size: 110% auto;
+}
+
+#newsmindoroflex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* space between news items */
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+
 #news-readmore {
     display: flex;
     width: 100%;
