@@ -32,12 +32,25 @@
   cursor: pointer;
 }
 
+#homebutton {
+  display: flex;
+  width: 100%;
+  color: #2A2C79;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#homebutton:active {
+  color: white;
+}
+
 .area-city {
   font-size: 18px;
   padding: 5px 10px 5px 10px;
   background-color: #ffffff;
   transition: 0.3s ease-out;
   user-select: none;
+  text-decoration: none;
 }
 
 .area-city:hover {
