@@ -82,7 +82,27 @@ async function loadSnippet(container, file) {
       document.body.appendChild(newScript);
       oldScript.remove();
     });
+
+    // 🔵 Trigger snippet loaded
+    document.dispatchEvent(new Event("snippetLoaded"));
+
   } catch {
     container.innerHTML = `<p style="color:#007bff;">Failed to load ${file.split('/').pop().replace('.html','')}</p>`;
   }
 }
+
+/* ------------------------------
+   ✅ SHOW/HIDE PUERTO PRINCESA DIRECTORY
+   ------------------------------ */
+document.addEventListener("snippetLoaded", () => {
+  const container = document.getElementById("businessdirectory-puertoprincesa");
+
+  if (!container) return;
+
+  // show only when Puerto Princesa snippet is active
+  if (page.getAttribute("data-snippet")?.includes("puertoprincesa")) {
+    container.style.display = "flex";
+  } else {
+    container.style.display = "none";
+  }
+});
