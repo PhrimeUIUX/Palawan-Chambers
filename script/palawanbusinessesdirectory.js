@@ -1,54 +1,274 @@
 const data = {
   businesses: [
     {
-      title: "Narra Digital Solutions",
-      email: "contact@narradigital.com",
-      image: "https://images.unsplash.com/photo-1521791055366-0d553872125f",
+      title: "7 Digit Construction",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "Palawan Creative Studio",
-      email: "hello@palawancreativestudio.com",
-      image: "https://images.unsplash.com/photo-1503602642458-232111445657",
+      title: "868 Document Processing Services",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "Speedovate Web Agency",
-      email: "info@speedovate.co",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      title: "ARLustre Construction Corporation",
+      email: "analustre_28@yahoo.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "Wonder Van Transport Services",
-      email: "support@wondervantransport.com",
-      image: "https://images.unsplash.com/photo-1517142089942-ba376ce32a0a",
+      title: "Alton General Merchandising",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "Piksurperfect Productions",
-      email: "team@piksurperfect.com",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      title: "Apo Accounting Office",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "ByaheKa Mobility",
-      email: "contact@byaheka.ph",
-      image: "https://images.unsplash.com/photo-1485727749690-d091e8284efc",
+      title: "Astoria Palawan",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "Elantress Beauty Essentials",
-      email: "inquiries@elantressph.com",
-      image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+      title: "Avenue Enterprises, Inc.",
+      email: "teresita.dimalanta@yahoo.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "Backride Palawan",
-      email: "booking@backridepalawan.com",
-      image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828",
+      title: "Bambu Suites",
+      email: "bambusuitesph@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "Coconut Grove Café",
-      email: "hello@coconutgrovecafe.com",
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+      title: "Binuatan Creations",
+      email: "et_valledor@yahoo.com.ph",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
     {
-      title: "TropicBuild Construction",
-      email: "office@tropicbuild.com",
-      image: "https://images.unsplash.com/photo-1486308510493-aa64833637b7",
+      title: "BISTROCABALEN AND CATERING SERVICES",
+      email: "dindin.jo@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Budget Home Depot",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Delta P Inc",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Eye Level",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Farmbihira Farm",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Filipino Hospitality Management And Consultancy",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Foundever Philippines Corporation",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Golraz Enterprise, Inc.",
+      email: "golraz_ginpal@yahoo.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Holiday Suites",
+      email: "analustre_28@yahoo.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Horizon Sun Charters",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Iwh Puerto Princesa Hotel Corp",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "JA Malijan Construction",
+      email: "ea.jamcons@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "J1 Diner & Bar",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Jancor Engineering And Consultancy Services",
+      email: "jac32206@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Jao Surublien Pasalubong & Souvenir Corner",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Microsourcing Phils Inc",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Ka Inato Restaurant",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Kinabuch Grill & Bar",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Link Ri Logistics",
+      email: "emonzon@linkri.com.ph",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Red Chief Gas Trading",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Lionheart Farms Philippines Corporation",
+      email: "EA.President@lionheartfarms.com.ph",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Lts Pinnacle Holdings Inc",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Lvpolicarpio Construction And Trading",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Marianne Hotel",
+      email: "mariannehotel_palawan@yahoo.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Midtown Sales Inc",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Nevas Pizza Delight",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "OBeerload sisig house",
+      email: "christianlagan37@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Olympic Construction Supply",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "One Hundred Percent Construction & Development Corporation",
+      email: "mct@ohppalawan.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Palawan Uno Hotel",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "PALTRANCO ( Palawan Transport Corporation )",
+      email: "palawantransportcorp@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "PCBSI Port Terminal Management Corp",
+      email: "bing.repaso@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Real Tree Property",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Rizal Commercial Banking Corp",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Sabuya Coffee Trading",
+      email: "walshmelinda4@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "SQUEEZE and GRIND Cafe",
+      email: "mauriciolibertyjoy18@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Synchros Power Solutions",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Teslinque Computer Sales",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "TheWillowTree Art Shop Co.",
+      email: "thegypsyslair319@gmail.com",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "The Deli Mart And More",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Towin Enterprises",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Toyota Puerto Princesa",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Ugm Construction",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Vjb Food Products",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
+    },
+    {
+      title: "Yakult Co.",
+      email: "",
+      image: "assets/puertoprincesadirectory/omplaceholder.png",
     },
   ],
 };
@@ -74,6 +294,3 @@ renderBusinesses();
 //   const grid = document.getElementById("businessGrid");
 //   if (grid) renderBusinesses();
 // });
-
-
-
