@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/puertoprincesadirectory", "destination": "/puertoprincesadirectory.html" },
+    { "source": "/puertoprincesadirectory/", "destination": "/puertoprincesadirectory.html" }
+  ]
+}

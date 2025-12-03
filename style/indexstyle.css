@@ -98,6 +98,11 @@ body {
 }
 
 #contactbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     height: auto;
     width: fit-content;
     align-self: center;
