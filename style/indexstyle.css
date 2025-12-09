@@ -1,222 +1,250 @@
-@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    color: #2A2C79;
-    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  color: #2a2c79;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
 }
 
 #header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    background-color: #1D293A;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #1d293a;
+  overflow: hidden;
+}
+
+#open-chambers-container {
+  display: flex; /* default */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  #open-chambers-container {
+    display: none !important;
+  }
 }
 
 #page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/pccimimaropabg.jpg?v=2');
-    /* or an online link */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/pccimimaropabg.jpg?v=2");
+  /* or an online link */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #hero-logo {
-    align-self: center;
-    height: auto;
-    margin-top: -50px;
-    width: clamp(150px, 13vw, 200px);
+  align-self: center;
+  height: auto;
+  margin-top: -50px;
+  width: clamp(150px, 13vw, 200px);
 }
 
+/* Default logo style */
 #logo {
-    height: auto;
-    width: clamp(100px, 50vw, 200px);
-    padding-left: clamp(10px, 2vw, 15px);
-    padding-top: clamp(10px, 2vw, 15px);
-    padding-bottom: clamp(10px, 2vw, 15px);
-    cursor: pointer;
+  height: auto;
+  width: clamp(100px, 50vw, 150px);
+  padding-left: clamp(10px, 2vw, 15px);
+  padding-top: clamp(10px, 2vw, 15px);
+  padding-bottom: clamp(10px, 2vw, 15px);
+  cursor: pointer;
+}
+
+/* Mobile — center the logo */
+@media (max-width: 768px) {
+  #logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
+    padding-left: 0; /* optional: remove left padding if needed */
+    padding-top: 17px;
+  }
 }
 
 #lottie_home {
-    margin-bottom: -20px;
-    margin-top: -20px;
+  margin-bottom: -20px;
+  margin-top: -20px;
 }
 
 #main_container {
-    display: flex;
-    height: fit-content;
-    padding: 0%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
+  display: flex;
+  height: fit-content;
+  padding: 0%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
 #hero_container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 100px 0 100px 0;
-    max-width: clamp(350px, 80vw, 800px);
-    height: fit-content;
-    gap: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px 0 100px 0;
+  max-width: clamp(350px, 80vw, 800px);
+  height: fit-content;
+  gap: 0px;
 }
 
 #headline {
-    width: 100%;
-    color: #ffffff;
-    font-size: clamp(38px, 8vw, 75px);
-    font-family: Konkhmer Sleokchher;
-    line-height: 1;
-    letter-spacing: -2px;
+  width: 100%;
+  color: #ffffff;
+  font-size: clamp(38px, 8vw, 75px);
+  font-family: Konkhmer Sleokchher;
+  line-height: 1;
+  letter-spacing: -2px;
 }
 
 #subtext {
-    width: 100%;
-    color: #ffffff;
-    font-size: clamp(16px, 3vw, 28px);
+  width: 100%;
+  color: #ffffff;
+  font-size: clamp(16px, 3vw, 28px);
 }
 
 #contactbuttonmargin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 125px;
-    user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  user-select: none;
 }
 
 #contactbutton {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: auto;
-    width: fit-content;
-    align-self: center;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: clamp(14px, 3vw, 24px);
-    color: white;
-    background-color: #2A2C79;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-    transition: 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+  width: fit-content;
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: clamp(14px, 3vw, 24px);
+  color: white;
+  background-color: #2a2c79;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: 0.3s ease;
 }
 
 #contactbuttonmargin-chambers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    height: auto;
-    user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  height: auto;
+  user-select: none;
 }
 
 #contactbutton-chambers {
-    height: auto;
-    width: fit-content;
-    align-self: center;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: clamp(14px, 3vw, 24px);
-    color: white;
-    background-color: #2A2C79;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-    transition: 0.3s ease;
+  height: auto;
+  width: fit-content;
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: clamp(14px, 3vw, 24px);
+  color: white;
+  background-color: #2a2c79;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: 0.3s ease;
 }
 
 #contactbutton-chambers:hover {
-    background-color: #393c95;
+  background-color: #393c95;
 }
 
 #contactbutton:hover {
-    font-size: clamp(20px, 3vw, 26px);
+  font-size: clamp(20px, 3vw, 26px);
 }
 
 #contactbutton:active {
-    font-size: clamp(18px, 3vw, 24px);
+  font-size: clamp(18px, 3vw, 24px);
 }
 
 #mission-vision-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
-    height: fit-content;
-    gap: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: fit-content;
+  gap: 0px;
 }
 
 @media (max-width: 500px) {
-    #mission-vision-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        height: auto;
-        gap: 0px;
-        flex-direction: column;
-    }
+  #mission-vision-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: auto;
+    gap: 0px;
+    flex-direction: column;
+  }
 }
 
 .mission-vision {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-    height: 100%;
-    width: clamp(325px, 80vw, 550px);
-    padding: 20px 20px 20px 20px;
-    gap: 20px;
-    color: #2A2C79;
-    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  height: 100%;
+  width: clamp(325px, 80vw, 550px);
+  padding: 20px 20px 20px 20px;
+  gap: 20px;
+  color: #2a2c79;
+  background-color: #fff;
 }
 
 .mission-vision-text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    overflow: visible;
+  font-size: 1.5rem;
+  font-weight: 600;
+  overflow: visible;
 }
 
 .mission-vision-description {
-    height: auto;
-    font-size: 1rem;
-    font-weight: 400;
-    overflow: visible;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: visible;
 }
 
 #mission-img {
-    width: 100%;
-    height: 250px;
-    aspect-ratio: 1/2;
-    border-radius: 10px;
-    background-image: url('https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/mission.jpg');
-    background-position: center;
+  width: 100%;
+  height: 250px;
+  aspect-ratio: 1/2;
+  border-radius: 10px;
+  background-image: url("https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/mission.jpg");
+  background-position: center;
 }
 
 #footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px 20px 0px;
-    width: 100%;
-    font-size: clamp(12px, 3vw, 16px);
-    background-color: #1D293A;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  font-size: clamp(12px, 3vw, 16px);
+  background-color: #1d293a;
+  color: white;
 }

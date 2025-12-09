@@ -1,12 +1,20 @@
 #open-container {
   display: flex;
   height: 80px;
-  width: 50px;
+  width: 80px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #24344b;
+  background-color: #212f42; /* default */
 }
+
+/* Mobile: change background color */
+@media (max-width: 768px) {
+  #open-container {
+    background-color: #1d293a !important;
+  }
+}
+
 
 #open {
   height: 35px;
@@ -19,9 +27,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 0%;
-  margin: 10px;
-  font-size: 1.3rem;
+  margin: 10px 30px 10px 15px;
+  font-size: 1.8rem;
   font-weight: 600;
+}
+
+#divider {
+  height: 1px;
+  width: 100%;
+  background-color: #e6e6e6;
+  margin: 0 auto;
+}
+
+#logo2 {
+  height: auto;
+  width: clamp(100px, 50vw, 175px);
+  padding-left: clamp(10px, 2vw, 15px);
+  padding-top: clamp(10px, 2vw, 15px);
+  padding-bottom: clamp(10px, 2vw, 15px);
+  cursor: pointer;
 }
 
 /* --- Close button --- */
@@ -46,8 +70,8 @@
 
 .area-city {
   font-size: 18px;
-  padding: 5px 10px 5px 10px;
-  background-color: #ffffff;
+  font-weight: 600;
+  padding: 15px 30px 15px 30px;
   transition: 0.3s ease-out;
   user-select: none;
   text-decoration: none;
@@ -88,7 +112,7 @@
 /* --- Drawer (from left, fully hidden with translate) --- */
 #drawer {
   left: 0;
-  width: 280px;
+  width: firt-content;
   background: #fff;
   box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);

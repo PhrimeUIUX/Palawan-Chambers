@@ -2,6 +2,8 @@ const drawer = document.getElementById('drawer');
 const overlay = document.getElementById('overlay');
 const openBtn = document.getElementById('open');
 const openBtn2 = document.getElementById('open-container');
+const openChambers = document.getElementById('open-chambers');
+const openChambersContainer = document.getElementById('open-chambers-container');
 const closeBtn = document.getElementById('close');
 const contactBtn = document.getElementById('contactbuttonmargin');
 const areaCities = document.querySelectorAll('.area-city');
@@ -10,8 +12,15 @@ const missionVision = document.getElementById('mission-vision-container');
 
 let activeCity = null;
 
+/* ------------------------------
+   OPEN DRAWER BUTTONS
+   ------------------------------ */
 openBtn.onclick = openDrawer;
 openBtn2.onclick = openDrawer;
+
+if (openChambers) openChambers.onclick = openDrawer;
+if (openChambersContainer) openChambersContainer.onclick = openDrawer;
+
 closeBtn.onclick = closeDrawer;
 overlay.onclick = closeDrawer;
 
@@ -19,6 +28,9 @@ if (contactBtn) {
   contactBtn.addEventListener('click', openDrawer);
 }
 
+/* ------------------------------
+   AREA CITY CLICK HANDLER
+   ------------------------------ */
 areaCities.forEach(city => {
   city.addEventListener('click', () => {
     // remove active from all
@@ -51,6 +63,9 @@ areaCities.forEach(city => {
   });
 });
 
+/* ------------------------------
+   OPEN & CLOSE DRAWER
+   ------------------------------ */
 function openDrawer() {
   drawer.classList.add('active');
   overlay.classList.add('active');
@@ -66,7 +81,9 @@ function closeDrawer() {
   overlay.classList.remove('active');
 }
 
-// 🧩 snippet loader
+/* ------------------------------
+   🧩 SNIPPET LOADER
+   ------------------------------ */
 async function loadSnippet(container, file) {
   try {
     const res = await fetch(file + `?v=${Date.now()}`); // cache-bust
@@ -92,7 +109,7 @@ async function loadSnippet(container, file) {
 }
 
 /* ------------------------------
-   ✅ SHOW/HIDE PUERTO PRINCESA DIRECTORY
+   SHOW/HIDE PUERTO PRINCESA DIRECTORY
    ------------------------------ */
 document.addEventListener("snippetLoaded", () => {
   const container = document.getElementById("businessdirectory-puertoprincesa");
