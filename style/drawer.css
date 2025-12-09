@@ -68,6 +68,11 @@
   color: white;
 }
 
+.active-city {
+  background-color: #2A2C79; /* State background color */
+  color: white; /* Text color */
+}
+
 .area-city {
   font-size: 18px;
   font-weight: 600;
