@@ -44,9 +44,9 @@ areaCities.forEach(city => {
       }
 
       // 🏞️ update background image dynamically
-      page.style.backgroundImage = `url('https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/pcci${cityId}bg.jpg?v=2')`;
+      page.style.backgroundImage = `url('https://storage.googleapis.com/mimaropa_chambers/backgrounds/pcci${cityId}bg.jpg?v=2')`;
     }
-
+             
     closeDrawer();
   });
 });

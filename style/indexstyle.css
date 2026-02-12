@@ -41,7 +41,7 @@ body {
   height: auto;
   justify-content: center;
   align-items: center;
-  background-image: url("https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/pccimimaropabg.jpg?v=2");
+  background-image: url("https://storage.googleapis.com/mimaropa_chambers/backgrounds/pccimimaropabg.jpg?v=2");
   /* or an online link */
   background-size: cover;
   background-position: center;
@@ -234,7 +234,7 @@ body {
   height: 250px;
   aspect-ratio: 1/2;
   border-radius: 10px;
-  background-image: url("https://storage.googleapis.com/ppc_toda_web_app/pccimimaropa/mission.jpg");
+  background-image: url("https://storage.googleapis.com/mimaropa_chambers/assets/mission.jpg");
   background-position: center;
 }
 
